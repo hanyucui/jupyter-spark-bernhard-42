@@ -169,6 +169,9 @@ define([
                 spark_ui_url = msg.content.data.uiWebUrl;
             });
         });
+        kcomm = Jupyter.notebook.kernel.comm_manager.new_comm('spark_kernel_comm', {})
+        kcomm.send({})
+
     });
 
     var show_running_jobs = function() {
