@@ -11,7 +11,7 @@ var cache = [];
 var current_update_frequency;
 
 var spark_is_running = false;
-var spark_ui_url = null;
+var spark_ui_url = 'http://localhost:4040';
 var cell_queue = [];
 var current_cell;
 var cell_jobs_counter = 0;
